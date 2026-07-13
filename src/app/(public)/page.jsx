@@ -3,6 +3,8 @@ import MouseGlow from "@/components/publicConponents/MouseGlow";
 import HeroSection from "@/components/sectionComponents/heroSection/HeroSection";
 import TechSection from "@/components/sectionComponents/techSection/TechSection";
 import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+import PortfolioFilterableGrid from "@/components/blocks/portfolio/portfolio-project-displays/filterable-grid";
+import ContactSection from "@/components/sectionComponents/contactSection/ContactSection";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
         <HeroSection />
         <TechSection />
         <FeatureSection />
+        <PortfolioFilterableGrid />
+        <ContactSection />
       </main>
     </div>
   );

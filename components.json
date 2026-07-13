@@ -24,6 +24,9 @@
   "registries": {
     "@aceternity": "https://ui.aceternity.com/registry/{name}.json",
     "@efferd": "https://efferd.com/r/{name}.json",
-    "@magicui": "https://magicui.design/r/{name}"
+    "@magicui": "https://magicui.design/r/{name}",
+    "@blocks-so": "https://blocks.so/r/{name}.json",
+    "@supabase": "https://supabase.com/ui/r/{name}.json",
+    "@reui": "https://reui.io/r/{style}/{name}.json"
   }
 }
