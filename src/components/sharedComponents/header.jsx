@@ -10,11 +10,8 @@ import { ScrollProgress } from "../ui/scroll-progress"
 import Link from "next/link"
 
 export const navLinks = [
-  { label: "Work", href: "#work" },
+  { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Tools", href: "#tools" },
-  { label: "Games", href: "#games" },
-  { label: "Blog", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ]
 
