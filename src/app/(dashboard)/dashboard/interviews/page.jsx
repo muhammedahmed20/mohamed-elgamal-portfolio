@@ -159,7 +159,7 @@ export default function InterviewsPage() {
                             : "default"
                       }
                     >
-                      {interview.status}
+                      {interview.ticket_status}
                     </Badge>
                   </TableCell>
 

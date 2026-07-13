@@ -79,6 +79,7 @@ export default function BookCall() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
     setNow(new Date());
     setTimeZone(Intl.DateTimeFormat().resolvedOptions().timeZone);
@@ -98,7 +99,7 @@ export default function BookCall() {
       const { data, error } = await supabase
         .from("call_bookings")
         .select("starts_at")
-        .neq("status", "canceled");
+        .neq("meeting_status", "cancelled");
 
       if (error) {
         console.error(error);
@@ -111,7 +112,7 @@ export default function BookCall() {
     }
 
     fetchBookings();
-  }, [mounted]);
+  }, [mounted, supabase]);
 
   // جلب حجوزات الشهر المعروض عشان نحدد الأيام المتحجزة بالكامل
   useEffect(() => {
@@ -140,7 +141,7 @@ export default function BookCall() {
       const { data, error } = await supabase
         .from("call_bookings")
         .select("starts_at")
-        .neq("status", "canceled")
+        .neq("meeting_status", "cancelled")
         .gte("starts_at", monthStart.toISOString())
         .lte("starts_at", monthEnd.toISOString());
 
@@ -169,7 +170,7 @@ export default function BookCall() {
     }
 
     fetchMonthBookings();
-  }, [visibleMonth, mounted]);
+  }, [visibleMonth, mounted, supabase]);
 
   if (!mounted) {
     return null;
