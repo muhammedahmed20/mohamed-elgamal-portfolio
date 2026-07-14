@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       lang="en"
       suppressHydrationWarning
       className={cn(
-        "h-full antialiased",
+        "h-full antialiased scroll-smooth",
         geistSans.variable,
         geistMono.variable,
         inter.variable

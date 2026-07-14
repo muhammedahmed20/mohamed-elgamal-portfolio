@@ -13,7 +13,7 @@ export default function ContactSection() {
   const [activeTab, setActiveTab] = useState("call");
 
   return (
-    <section className="w-full p-4">
+    <section id="contact" className="w-full p-4 mb-5">
       <div className="mx-auto max-w-4xl text-center">
         {/* Section header */}
         <div className="mb-10">

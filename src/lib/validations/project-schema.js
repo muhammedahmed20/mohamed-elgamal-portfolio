@@ -53,3 +53,7 @@ export const callSchema = z.object({
 
   message: z.string().optional().or(z.literal("")),
 });
+
+export const noteSchema = z.object({
+  note: z.string().min(3, "Name must be at least 3 characters."),
+});
