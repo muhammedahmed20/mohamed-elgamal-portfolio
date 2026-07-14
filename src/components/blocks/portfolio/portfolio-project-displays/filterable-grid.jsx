@@ -175,7 +175,7 @@ export default function PortfolioFilterableGrid() {
   });
 
   return (
-    <div className="py-16 md:py-24">
+    <div id="projects" className="py-16 md:py-24">
       <div className="container mx-auto px-4 2xl:max-w-[1400px]">
         {/* Section header */}
         <div className="mb-12 text-center md:mb-16">

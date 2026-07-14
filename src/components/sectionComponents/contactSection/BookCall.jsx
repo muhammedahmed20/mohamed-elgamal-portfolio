@@ -198,11 +198,11 @@ export default function BookCall() {
         {/* Meeting Info */}
         <div className="flex flex-col gap-2 border-b p-6 text-left md:border-b-0 md:border-r">
           <Avatar>
-            <AvatarImage src="/pic.png" alt="@shadcn" />
-            <AvatarFallback>CN</AvatarFallback>
+            <AvatarImage src="/myPic.jpg" alt="@shadcn" />
+            <AvatarFallback>mohamed elgamal pic</AvatarFallback>
             <AvatarBadge className="bg-green-600 dark:bg-green-800" />
           </Avatar>
-          <h2 className="text-base font-medium">Aayush Bharti</h2>
+          <h2 className="text-base font-medium">Mohamed Elgamal</h2>
           <p className="mt-1.5 text-[13px] text-muted-foreground">
             30 min meeting
           </p>
